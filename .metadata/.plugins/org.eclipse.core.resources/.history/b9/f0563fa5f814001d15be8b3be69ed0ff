@@ -1,0 +1,17 @@
+package com.pdas.springdemo;
+
+public class SetterDemoApp {
+
+	public static void main(String[] args) {
+		
+		// load spring configuration file
+		
+		
+		// retrieve bean from spring constructor
+		
+		
+		// call methods on the bean
+
+	}
+
+}
