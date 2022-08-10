@@ -23,8 +23,16 @@
 	<section name="DialogBounds_SearchDialog">
 		<item key="DIALOG_X_ORIGIN" value="666"/>
 		<item key="DIALOG_Y_ORIGIN" value="179"/>
-		<item key="DIALOG_WIDTH" value="606"/>
-		<item key="DIALOG_HEIGHT" value="515"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.163636|0|WINDOWS|1|-14|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_WIDTH" value="830"/>
+		<item key="DIALOG_HEIGHT" value="560"/>
+		<item key="DIALOG_FONT_NAME" value="1|Consolas|11.781818|1|WINDOWS|1|-18|0|0|0|700|0|0|0|-18|3|2|1|49|Consolas"/>
+	</section>
+	<section name="">
+		<item key="org.eclipse.jdt.search.resultpage.limit" value="1000"/>
+		<item key="org.eclipse.jdt.search.resultpage.limit_enabled" value="TRUE"/>
+	</section>
+	<section name="org.eclipse.jdt.ui.JavaSearchResultPage">
+		<item key="org.eclipse.jdt.search.resultpage.limit" value="1000"/>
+		<item key="org.eclipse.jdt.search.resultpage.limit_enabled" value="TRUE"/>
 	</section>
 </section>
