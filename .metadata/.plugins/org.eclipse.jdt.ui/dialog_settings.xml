@@ -14,6 +14,12 @@
 		<item key="FinalModifier" value="false"/>
 		<item key="SynchronizedModifier" value="false"/>
 		<item key="Comments" value="false"/>
+		<item key="LimitElements" value="false"/>
+		<item key="IgnoreDefault" value="true"/>
+		<item key="StringStyle" value="0"/>
+		<item key="LimitValue" value="10"/>
+		<item key="SkipNull" value="false"/>
+		<item key="ToStringTemplateSelected" value="0"/>
 	</section>
 	<section name="AddGetterSetterDialog">
 		<item key="SortOrdering" value="false"/>
@@ -22,9 +28,9 @@
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
 		<item key="DIALOG_X_ORIGIN" value="631"/>
 		<item key="DIALOG_Y_ORIGIN" value="9"/>
-		<item key="DIALOG_WIDTH" value="676"/>
-		<item key="DIALOG_HEIGHT" value="849"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.163636|0|WINDOWS|1|-14|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_WIDTH" value="954"/>
+		<item key="DIALOG_HEIGHT" value="955"/>
+		<item key="DIALOG_FONT_NAME" value="1|Consolas|11.781818|1|WINDOWS|1|-18|0|0|0|700|0|0|0|-18|3|2|1|49|Consolas"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
@@ -131,5 +137,22 @@
 			<list key="workingSets">
 			</list>
 		</section>
+	</section>
+	<section name="OverrideMethodDialog">
+		<item key="showtypes" value="true"/>
+	</section>
+	<section name="DialogBounds_OverrideMethodDialog">
+		<item key="DIALOG_X_ORIGIN" value="507"/>
+		<item key="DIALOG_Y_ORIGIN" value="48"/>
+		<item key="DIALOG_WIDTH" value="924"/>
+		<item key="DIALOG_HEIGHT" value="711"/>
+		<item key="DIALOG_FONT_NAME" value="1|Consolas|11.781818|1|WINDOWS|1|-18|0|0|0|700|0|0|0|-18|3|2|1|49|Consolas"/>
+	</section>
+	<section name="DialogBounds_GenerateToStringDialog">
+		<item key="DIALOG_X_ORIGIN" value="552"/>
+		<item key="DIALOG_Y_ORIGIN" value="9"/>
+		<item key="DIALOG_WIDTH" value="835"/>
+		<item key="DIALOG_HEIGHT" value="940"/>
+		<item key="DIALOG_FONT_NAME" value="1|Consolas|11.781818|1|WINDOWS|1|-18|0|0|0|700|0|0|0|-18|3|2|1|49|Consolas"/>
 	</section>
 </section>
