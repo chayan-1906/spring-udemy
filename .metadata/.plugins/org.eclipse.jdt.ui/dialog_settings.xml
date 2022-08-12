@@ -26,11 +26,11 @@
 		<item key="RemoveFinal" value="false"/>
 	</section>
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
-		<item key="DIALOG_X_ORIGIN" value="631"/>
-		<item key="DIALOG_Y_ORIGIN" value="9"/>
-		<item key="DIALOG_WIDTH" value="954"/>
-		<item key="DIALOG_HEIGHT" value="955"/>
-		<item key="DIALOG_FONT_NAME" value="1|Consolas|11.781818|1|WINDOWS|1|-18|0|0|0|700|0|0|0|-18|3|2|1|49|Consolas"/>
+		<item key="DIALOG_X_ORIGIN" value="516"/>
+		<item key="DIALOG_Y_ORIGIN" value="8"/>
+		<item key="DIALOG_WIDTH" value="858"/>
+		<item key="DIALOG_HEIGHT" value="720"/>
+		<item key="DIALOG_FONT_NAME" value="1|Consolas|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|-18|3|2|1|49|Consolas"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
