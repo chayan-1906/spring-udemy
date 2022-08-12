@@ -1,5 +1,0 @@
-package com.pdas.springdemo;
-
-public interface Coach {
-	public String getDailyWorkout();
-}
