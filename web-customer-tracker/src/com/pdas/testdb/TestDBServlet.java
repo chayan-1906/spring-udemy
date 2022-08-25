@@ -2,6 +2,7 @@ package com.pdas.testdb;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.rmi.ServerException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
@@ -12,40 +13,35 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class TestDBServlet
+ * Servlet implementation class TestDbServlet
  */
-@WebServlet("/TestDBServlet")
-public class TestDBServlet extends HttpServlet {
+@WebServlet("/TestDbServlet")
+public class TestDbServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
+
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	@Override
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-	                throws ServletException, IOException {
-		
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// setup connection variables
-		String username = "springstudent";
+		String user = "springstudent";
 		String password = "springstudent";
 		
 		String jdbcUrl = "jdbc:mysql://localhost:3306/web_customer_tracker?useSSL=false";
-		String jdbcDriver = "com.mysql.jdbc.Driver";
+		String driver = "com.mysql.jdbc.Driver";
 		
 		// get connection to database
 		try {
-			PrintWriter printWriter = response.getWriter();
-			printWriter.println("Connecting to database: " + jdbcUrl);
-			Class.forName(jdbcDriver);
-			Connection connection = DriverManager.getConnection(jdbcUrl, username, password);
-			printWriter.println("SUCCESS!!!");
-			connection.close();
-		} catch (Exception exception) {
+			PrintWriter out = response.getWriter();
+			out.println("Connecting to database: " + jdbcUrl);
+			Class.forName(driver);
+			Connection myConn = DriverManager.getConnection(jdbcUrl, user, password);
+			out.println("SUCCESS!!");
+			myConn.close();
+		} catch(Exception exception) {
 			exception.printStackTrace();
 			throw new ServletException(exception);
 		}
-		
 	}
-	
+
 }
