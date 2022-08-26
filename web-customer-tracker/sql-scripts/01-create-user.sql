@@ -1,7 +1,6 @@
-CREATE USER 'springstudent'@'localhost' IDENTIFIED BY 'springstudent';
+CREATE USER 'springstudentt'@'localhost' IDENTIFIED BY 'springstudentt';
 
-GRANT ALL PRIVILEGES ON * . * TO 'springstudent'@'localhost';
-
+GRANT ALL PRIVILEGES ON * . * TO 'springstudentt'@'localhost';
 #
 # Starting with MySQL 8.0.4, the MySQL team changed the 
 # default authentication plugin for MySQL server 
@@ -12,4 +11,4 @@ GRANT ALL PRIVILEGES ON * . * TO 'springstudent'@'localhost';
 # See the MySQL Reference Manual for details: 
 # https://dev.mysql.com/doc/refman/8.0/en/caching-sha2-pluggable-authentication.html
 #
-ALTER USER 'springstudent'@'localhost' IDENTIFIED WITH mysql_native_password BY 'springstudent';
+ALTER USER 'springstudentt'@'localhost' IDENTIFIED WITH mysql_native_password BY 'springstudentt';

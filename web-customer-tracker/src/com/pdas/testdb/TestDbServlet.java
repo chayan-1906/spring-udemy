@@ -2,7 +2,6 @@ package com.pdas.testdb;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.rmi.ServerException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
@@ -18,16 +17,19 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/TestDbServlet")
 public class TestDbServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+	
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	@Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+	                throws ServletException, IOException {
 		// setup connection variables
-		String user = "springstudent";
-		String password = "springstudent";
+		String user = "springstudentt";
+		String password = "springstudentt";
 		
-		String jdbcUrl = "jdbc:mysql://localhost:3306/web_customer_tracker?useSSL=false";
+		String jdbcUrl = "jdbc:mysql://localhost:3306/web_customer_tracker?allowPublicKeyRetrieval=true&useSSL=false";
 		String driver = "com.mysql.jdbc.Driver";
 		
 		// get connection to database
@@ -38,10 +40,10 @@ public class TestDbServlet extends HttpServlet {
 			Connection myConn = DriverManager.getConnection(jdbcUrl, user, password);
 			out.println("SUCCESS!!");
 			myConn.close();
-		} catch(Exception exception) {
+		} catch (Exception exception) {
 			exception.printStackTrace();
 			throw new ServletException(exception);
 		}
 	}
-
+	
 }
